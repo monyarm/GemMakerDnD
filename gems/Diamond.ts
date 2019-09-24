@@ -1,7 +1,8 @@
 import Gem from "../Gem";
 var permutations = require("../utils/permutations.js");
+import {facetedCuts,smoothCuts,roughCuts} from "../utils/cuts";
 
-export const Diamond = new Gem("Diamond", 5000, "GP", [...permutations.product(["","Pale ","Pale ","Pale ","Pale ","Deep "],[
+export const Diamond = new Gem("Diamond", 5000, "GP", [...permutations.product(["","","","Pale ","Pale ","Deep "],[
 "Blue",
 "Bluish-Gray","Bluish-White","Bluish-Black","Bluish-Brown","Bluish-Green",
 "Grayish-Blue","Grayish-Green","Grayish-Olive","Grayish-Yellow","Grayish-Brown","Grayish-Pink","Dark Gray",
@@ -29,8 +30,4 @@ export const Diamond = new Gem("Diamond", 5000, "GP", [...permutations.product([
 "Frost","Porcelain","Sepia","Hazelnut","Canary","Gold","Lemon","Honey","Tangerine","Marigold","Fire","Cherry","Rose","Wine","Scarlet","Sangria","Mahogany","Coral","Rouge",
 "Mauve","Violet","Boysenberry","Lilac","Magenta","Lilac","Perwinkle","Orchid","Navy","Indigo","Cerulean","Azure","Arctic","Lime","Seafoam","Shamrock","Moss","Mint","Mocha","Caramel",
 "Graphite","Silver","Smoke","Ash","Charcoal","Ebony","Midnight","Jet","Clear"
-], ["Rough","Princess Cut", "Cushion Cut","Heart Cut","Pear Cut","Marquise Cut","Radiant Cut","Asscher Cut","Emerald Cut","Oval Cut","Round Brilliant","Round Brilliant","Round Brilliant",
-"Round Brilliant","Round Brilliant","Round Brilliant","Round Brilliant","Round Brilliant","Round Brilliant","Round Brilliant","Round Brilliant","Round Brilliant",
-"Passion Cut","Passion Cut","Passion Cut", "Trillion Cut","Carré Cut","Barion Cut","Oval Brilliant","Pear Brilliant","Step Cut","High Cabochon","Cabochon","Lentil-Shaped",
-"Mogul Cut","Rose Cut"
-]);
+], [...facetedCuts,...roughCuts,...smoothCuts]);

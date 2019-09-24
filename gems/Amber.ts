@@ -2,6 +2,8 @@ import * as _ from "lodash";
 var permutations = require("../utils/permutations.js");
 import Gem from "../Gem";
 
+import {roughCuts,facetedCuts,smoothCuts} from "../utils/cuts";
+
 export const Amber = new Gem(
   "Amber",
   100,
@@ -48,5 +50,5 @@ export const Amber = new Gem(
     .map((x: string[]) => {
       return (x[0] + x[1]).replace("  ", " ").trim();
     }),
-  ["Bead", "Faceted", "Natural"]
+  [...roughCuts,...facetedCuts,...smoothCuts]
 );

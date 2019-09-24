@@ -1,5 +1,5 @@
 import Gem from "../Gem";
-
+import {smoothCuts,facetedCuts,roughCuts} from "../utils/cuts"
 export const Agate = new Gem("Agate", 10, "GP", [
   "Banded",
   "Eye",
@@ -22,15 +22,12 @@ export const Agate = new Gem("Agate", 10, "GP", [
   "Polyhedroid",
   "Crazy Lace",
   "Sagenite"
-]);
+],[...smoothCuts,...roughCuts]);
 
-export const IrisAgate = new Gem("Iris Agate", 2, "GP");
-export const Turritella = new Gem("Turritella", 8, "SP");
+export const IrisAgate = new Gem("Iris Agate", 2, "GP",undefined,[...smoothCuts,...roughCuts]);
+export const Turritella = new Gem("Turritella", 8, "SP",undefined,[...smoothCuts,...roughCuts]);
 
-export const Algae = new Gem("Algae", 10, "GP", undefined, [
-  "Cabochon",
-  "Sliced"
-]);
+export const Algae = new Gem("Algae", 10, "GP", undefined, [...smoothCuts,...roughCuts]);
 
 export const Amethyst = new Gem("Amethyst", 100, "GP", [
   "Pale Violet",
@@ -38,7 +35,7 @@ export const Amethyst = new Gem("Amethyst", 100, "GP", [
   "Blue Violet",
   "Dark Violet",
   "Lavender Blue"
-]);
+], [...roughCuts,...facetedCuts]);
 
 export const Aventurine = new Gem(
   "Aventurine",
@@ -59,5 +56,5 @@ export const Aventurine = new Gem(
     "Blue-Grey",
     "Orange-Red"
   ],
-  ["Cabochon", "Tumbled Smooth"]
+  [...smoothCuts]
 );

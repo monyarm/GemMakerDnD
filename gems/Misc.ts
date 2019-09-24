@@ -1,6 +1,6 @@
 import Gem from "../Gem";
 var permutations = require("../utils/permutations.js");
-
+import {smoothCuts} from "../utils/cuts";
 // (Andalusite)
 export const Andar = new Gem("Andar", 50, "GP", [
   "Pink",
@@ -62,7 +62,7 @@ export const Azurite = new Gem(
     .map((x: string[]) => {
       return (x[0] + x[1]).replace("  ", " ").trim();
     }),
-  ["Cabochon", "Tumbled Smooth"]
+  [...smoothCuts]
 );
 
 export const Malachite = new Gem(
@@ -98,5 +98,5 @@ export const Malachite = new Gem(
     .map((x: string[]) => {
       return (x[0] + x[1]).replace("  ", " ").trim();
     }),
-  ["Cabochon", "Tumbled Smooth"]
+  [...smoothCuts]
 );
