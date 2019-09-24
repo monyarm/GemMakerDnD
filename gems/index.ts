@@ -10,6 +10,7 @@ import * as Misc from "./Misc";
 import * as Coral from "./Coral";
 import * as Beryl from "./Beryl";
 import * as Opal from "./Opal";
+import * as Diamond from "./Diamond";
 
 var GemsArray: any = [
   Quartz,
@@ -20,7 +21,8 @@ var GemsArray: any = [
   Misc,
   Coral,
   Beryl,
-  Opal
+  Opal,
+  Diamond
 ];
 var Gems: Gem[] = Object["values"](_.merge(...(GemsArray as [Gem])));
 
