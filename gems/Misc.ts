@@ -52,11 +52,11 @@ export const Azurite = new Gem(
         "",
         "",
         "",
-        "Bright Green Malachite Banded ",
-        "Dark Green Malachite Banded ",
-        "Blackish Green Malachite Banded ",
-        "Yellowish-Green Malachite Banded "
-      ],
+        "Bright Green Malachite ",
+        "Dark Green Malachite ",
+        "Blackish Green Malachite ",
+        "Yellowish-Green Malachite "
+      ],["Banded ","Spotted ","Speckled "],
       ["Azure Blue", "Deep Blue", "Pale Blue", "Dark Blue"]
     )
     .map((x: string[]) => {
@@ -84,15 +84,15 @@ export const Malachite = new Gem(
         "",
         "",
         "",
-        "Bright Green Banded ",
-        "Dark Green Banded ",
-        "Blackish Green Banded ",
-        "Yellowish-Green Banded ",
-        "Azure Blue Azurite Banded ",
-        "Dark Blue Azurite Banded ",
-        "Deep Blue Azurite Banded ",
-        "Pale Blue Azurite Banded "
-      ],
+        "Bright Green ",
+        "Dark Green ",
+        "Blackish Green ",
+        "Yellowish-Green ",
+        "Azure Blue Azurite ",
+        "Dark Blue Azurite ",
+        "Deep Blue Azurite ",
+        "Pale Blue Azurite "
+      ],["Banded ","Spotted ","Speckled "],
       ["Bright Green", "Dark Green", "Blackish Green", "Yellowish-Green"]
     )
     .map((x: string[]) => {
