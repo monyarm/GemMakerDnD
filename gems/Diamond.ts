@@ -1,6 +1,6 @@
 import Gem from "../Gem";
 var permutations = require("../utils/permutations.js");
-import {facetedCuts,smoothCuts,roughCuts} from "../utils/cuts";
+import {facetedCuts,smoothCuts,roughCuts,cabochon} from "../utils/cuts";
 
 export const Diamond = new Gem("Diamond", 5000, "GP", [...permutations.product(["","","","Pale ","Pale ","Deep "],[
 "Blue",
@@ -30,4 +30,4 @@ export const Diamond = new Gem("Diamond", 5000, "GP", [...permutations.product([
 "Frost","Porcelain","Sepia","Hazelnut","Canary","Gold","Lemon","Honey","Tangerine","Marigold","Fire","Cherry","Rose","Wine","Scarlet","Sangria","Mahogany","Coral","Rouge",
 "Mauve","Violet","Boysenberry","Lilac","Magenta","Lilac","Perwinkle","Orchid","Navy","Indigo","Cerulean","Azure","Arctic","Lime","Seafoam","Shamrock","Moss","Mint","Mocha","Caramel",
 "Graphite","Silver","Smoke","Ash","Charcoal","Ebony","Midnight","Jet","Clear"
-], [...facetedCuts,...roughCuts,...smoothCuts]);
+], [...facetedCuts,...roughCuts,...smoothCuts,...cabochon]);

@@ -1,5 +1,5 @@
 import Gem from "../Gem";
-import {smoothCuts,roughCuts} from "../utils/cuts";
+import {smoothCuts,roughCuts,sliced,cabochon} from "../utils/cuts";
 export const Opal1000 = new Gem(
   "Opal",
   1000,
@@ -17,12 +17,12 @@ export const Opal1000 = new Gem(
     "Pink",
     "Blue"
   ],
-  [...smoothCuts,...roughCuts]
+  [...smoothCuts,...roughCuts,...sliced,...cabochon]
 );
 export const Opal50 = new Gem(
   "Opal",
   50,
   "GP",
   ["Hydrophane"],
-  [...smoothCuts,...roughCuts]
+  [...smoothCuts,...roughCuts,...sliced,...cabochon]
 );

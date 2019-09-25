@@ -3,4 +3,7 @@ export const facetedCuts = ["Princess Cut", "Cushion Cut","Heart Cut","Pear Cut"
 "Mogul Cut","Rose Cut"]
 
 export const roughCuts = ["Natural", "Rough"]
-export const smoothCuts = ["Bead", "High Cabochon", "Cabochon", "Lentil-Shaped", "Tumbled Smooth","Sliced"]
+export const smoothCuts = ["Tumbled Smooth"]
+export const cabochon = ["High Cabochon", "Cabochon", "Lentil-Shaped"]
+export const bead = ["Bead"]
+export const sliced = ["Sliced"]
